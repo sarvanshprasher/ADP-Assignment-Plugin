@@ -16,7 +16,7 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
   
-    <js-module src="www/adpassignmentplugin.js" name="adpassignmentplugin">
+    <js-module src="www/adpassignmentplugin.js" name="adpAssignmentPlugin">
         <clobbers target="window.plugins.adpAssignmentPlugin" />
     </js-module>
     <platform name="android">
