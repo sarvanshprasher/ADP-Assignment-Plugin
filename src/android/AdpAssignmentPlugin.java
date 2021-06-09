@@ -11,7 +11,7 @@ import org.json.JSONObject;
 
 
 public class AdpAssignmentPlugin extends CordovaPlugin {
-  private static final String DURATION_LONG = 3;
+  private static final String DURATION_LONG = "3";
   @Override
   public boolean execute(String action, JSONArray args,
     final CallbackContext callbackContext) {
@@ -25,7 +25,7 @@ public class AdpAssignmentPlugin extends CordovaPlugin {
       try {
         JSONObject options = args.getJSONObject(0);
         message = options.getString("message");
-        message = message*10;
+        message = Integer.parseInt(message)*10;
         duration = options.getString("duration");
       } catch (JSONException e) {
         callbackContext.error("Error encountered: " + e.getMessage());
