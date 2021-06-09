@@ -20,18 +20,18 @@ public class AdpAssignmentPlugin extends CordovaPlugin {
         callbackContext.error("\"" + action + "\" is not a recognized action.");
         return false;
       }
-      String number;
+      String message;
       String duration;
       try {
         JSONObject options = args.getJSONObject(0);
-        number = options.getString("number");
+        message = options.getString("message");
         duration = options.getString("duration");
       } catch (JSONException e) {
-        callbackContext.error("Error encountered: " + e.getNumber());
+        callbackContext.error("Error encountered: " + e.getMessage());
         return false;
       }
       // Create the toast
-      Toast toast = Toast.makeText(cordova.getActivity(), number,
+      Toast toast = Toast.makeText(cordova.getActivity(), message,
         DURATION_LONG.equals(duration) ? Toast.LENGTH_LONG : Toast.LENGTH_SHORT);
       // Display toast
       toast.show();

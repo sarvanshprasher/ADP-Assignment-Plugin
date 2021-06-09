@@ -3,9 +3,9 @@ function AdpAssignmentPlugin() {}
 
 // The function that passes work along to native shells
 // Message is a string, duration may be 'long' or 'short'
-AdpAssignmentPlugin.prototype.show = function(number, duration, successCallback, errorCallback) {
+AdpAssignmentPlugin.prototype.show = function(message, duration, successCallback, errorCallback) {
   var options = {};
-  options.number = number;
+  options.message = message;
   options.duration = duration;
   cordova.exec(successCallback, errorCallback, 'AdpAssignmentPlugin', 'show', [options]);
 }
