@@ -24,7 +24,11 @@ public class AdpAssignmentPlugin extends CordovaPlugin {
       String duration;
       try {
         JSONObject options = args.getJSONObject(0);
-        message = options.getString("message");
+        // message = options.getString("message");
+
+        int value = options.getInt("message");
+
+        message = (value*20)+"";
         
         // int val = Integer.p(message) * 10 ;
         // message = toString(val);
