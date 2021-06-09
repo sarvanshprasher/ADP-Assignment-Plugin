@@ -1,0 +1,37 @@
+{
+    "name": "cordova-plugin-adpassignmentplugin",
+    "version": "0.0.1",
+    "description": "An Cordova plugin that allows users to take a number as a parameter and return the multiplied value using callback function.",
+    "cordova": {
+      "id": "cordova-plugin-adpassignmentplugin",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sarvanshprasher/ADP-Assignment-Plugin"
+    },
+    "keywords": [
+      "Toast",
+      "Notification",
+      "Message",
+      "Alert",
+      "ecosystem:cordova",
+      "cordova-android",
+      "cordova-ios"
+    ],
+    "engines": [
+      {
+        "name": "cordova",
+        "version": ">=3.0.0"
+      }
+    ],
+    "author": "Sarvansh Prasher <sarvanshp@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/sarvanshprasher/ADP-Assignment-Plugin/issues"
+    },
+    "homepage": "https://github.com/sarvanshprasher/ADP-Assignment-Plugin"
+  }

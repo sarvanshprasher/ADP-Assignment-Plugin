@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-adpassignmentplugin" version="0.0.1">
+    <name>ADP Assignment Plugin</name>
+
+    <description>An Cordova plugin that allows users to take a number as a parameter and return the multiplied value 
+    using callback function</description>
+    <license>MIT</license>
+
+    <keywords>cordova,ios,android,message,alert</keywords>
+    <repo>https://github.com/sarvanshprasher/ADP-Assignment-Plugin</repo>
+    <issue>https://github.com/sarvanshprasher/ADP-Assignment-Plugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/adpassignmentplugin.js" name="adpassignmentplugin">
+        <clobbers target="window.plugins.adpAssignmentPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AdpAssignmentPlugin">
+                <param name="android-package" value="com.cordova.plugin.AdpAssignmentPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/AdpAssignmentPlugin.java" target-dir="src/com/cordova/plugin" />
+    </platform>
+    <platform name="ios">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AdpAssignmentPlugin">
+                <param name="ios-package" value="com.cordova.plugin.AdpAssignmentPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/AdpAssignmentPlugin.java" target-dir="src/com/cordova/plugin" />
+    </platform>
+</plugin>
