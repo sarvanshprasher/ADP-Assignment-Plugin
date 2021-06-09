@@ -27,7 +27,7 @@ public class AdpAssignmentPlugin extends CordovaPlugin {
         number = options.getString("number");
         duration = options.getString("duration");
       } catch (JSONException e) {
-        callbackContext.error("Error encountered: " + e.getnumber());
+        callbackContext.error("Error encountered: " + e.getNumber());
         return false;
       }
       // Create the toast
