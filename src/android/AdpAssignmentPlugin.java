@@ -25,9 +25,9 @@ public class AdpAssignmentPlugin extends CordovaPlugin {
       try {
         JSONObject options = args.getJSONObject(0);
         message = options.getString("message");
-        int value = Integer.parseInt(message);
-        value = value*10;
-        message = value.toString();
+        
+        // int val = Integer.p(message) * 10 ;
+        // message = toString(val);
         duration = options.getString("duration");
       } catch (JSONException e) {
         callbackContext.error("Error encountered: " + e.getMessage());
