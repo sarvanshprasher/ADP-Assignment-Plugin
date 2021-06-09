@@ -28,13 +28,4 @@
 
         <source-file src="src/android/AdpAssignmentPlugin.java" target-dir="src/com/cordova/plugin" />
     </platform>
-    <platform name="ios">
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="AdpAssignmentPlugin">
-                <param name="ios-package" value="com.cordova.plugin.AdpAssignmentPlugin"/>
-            </feature>
-        </config-file>
-
-        <source-file src="src/ios/AdpAssignmentPlugin.java" target-dir="src/com/cordova/plugin" />
-    </platform>
 </plugin>

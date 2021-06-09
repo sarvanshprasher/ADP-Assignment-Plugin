@@ -5,8 +5,7 @@
     "cordova": {
       "id": "cordova-plugin-adpassignmentplugin",
       "platforms": [
-        "android",
-        "ios"
+        "android"
       ]
     },
     "repository": {
@@ -19,8 +18,7 @@
       "Message",
       "Alert",
       "ecosystem:cordova",
-      "cordova-android",
-      "cordova-ios"
+      "cordova-android"
     ],
     "engines": [
       {
