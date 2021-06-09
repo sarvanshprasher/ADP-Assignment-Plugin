@@ -29,7 +29,7 @@ public class AdpAssignmentPlugin extends CordovaPlugin {
         int value = options.getInt("message");
 
 
-        message = String.valueOf(alue*10);
+        message = String.valueOf(value*10);
         
         
         // int val = Integer.p(message) * 10 ;
